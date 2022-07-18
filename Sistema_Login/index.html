@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login-Helper</title>
+    <title>Faça seu Login</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/home.html" defer></script>
     <script src="js/index.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +16,7 @@
 </head>
 <body>
     <header>
-        <h1>Login-Helper</h1>
+        <h1>Login</h1>
     </header>
     <main>
         <form>
@@ -24,8 +25,8 @@
                 
                 <div class="password-container">
                     <input type="password" id="field-password" class="field-password" placeholder="***********">
-                    <i class="fa-solid fa-eye" id="eye"></i>
-                    <i class="fa-solid fa-eye-slash"></i>
+                    <i class="fa-solid fa-eye" id="eye" onclick="showPassword()"></i>
+                    <i class="fa-solid fa-eye-slash" id="eye-Slash" onclick="showPassword()"></i>
                 </div>
             </section>
             <section class="password-infos">
@@ -33,19 +34,22 @@
                     <input type="checkbox">
                     <span>Lembrar senha?</span>
                 </div>
-                <a href="">Esqueceu sua senha?/a>
+                <a href="">Esqueceu sua senha?</a>
             </section>
-            <button id="btn-login">Login</button>
+            <span class="espaço"></span>
+            <button id="btn-login" >Login <a href="js/home.html"></a></button>
             <section class="links-container">
                 <span>Ou entre com:</span>
+            
             <aside>
-                <a href="#"><i class="fa-brands fa-google-plus-square"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                <a href="#"><i class=" fab fa-google-plus-square google"></i></a>
+                <a href="#"><i class="fab fa-linkedin linkedin"></i></a>
+                <a href="#"><i class="fab fa-facebook-square facebook"></i></a>
             </aside>
             </section>
             <footer>
                 <hr>
+                <br><!-- COLOQUEI UM BR PORQUE O SPAN NAO FUNCIONOU NO CSS -->
                 <span>Ainda não tem uma conta <a href="#">Cadastra-se</a></span>
             </footer>
         </form>

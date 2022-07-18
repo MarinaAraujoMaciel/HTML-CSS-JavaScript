@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
+    color: white;
 }
 
 header{
@@ -11,7 +12,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ff7092;
+    background: linear-gradient(to top, #f05df3, #f78bf9) ;
 }
 
 header h1{
@@ -22,17 +23,17 @@ header h1{
 main{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(to top, #fc3c69,#ff5a80);
+    background: linear-gradient(to top, #3cb2fc,#f05df3);
 
     display: flex;
     justify-content: center;
-    box-shadow: inset 0px 2px 3px rgba(0, 0, 0,0.25);
+    /* box-shadow: inset 0px 2px 3px rgba(0, 0, 0,0.25); */
 }
 
 main form{
     margin-top: 5%;
-    width: 35%;
-    height: 75vh;
+    width: 35%; /* altura do fundo */
+    height: 75vh; /* largura do fundo */
     background-color: #ff7092;
     box-shadow: inset 0px 3px 4px rgba(0, 0, 0,0.4) inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 18px;
@@ -42,6 +43,7 @@ main form{
     flex-direction: column;
     align-items: center;
 }
+
 
 main form .inputs-container{
     margin-top: 10%;
@@ -61,7 +63,7 @@ main form .inputs-container input{
     border-radius: 12px;
     font-size: 16px;
     color: black;
-    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25); /* contorno */
     
 }
 
@@ -91,5 +93,142 @@ main form .password-container i {
 }
 
 main form .password-container #eye{
-    display: none
+    display: none;
+}
+
+main form .password-infos{
+    width: 90%;
+    margin-top: 3%;
+    
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main form .password-infos a{
+    transition: 0.2s ease-in-out;
+}
+
+main form .password-infos a:hover{ /* ao passar o mouse muda a cor */
+   color:#777;
+}
+
+main form .espaço{
+    padding-bottom: 35px ;
+} 
+
+main form button{
+    background-color: #f78bf9;
+    width: 90%;
+    height: 45px;
+    padding: 8px 15px;
+    border: 0;
+    outline: 0;
+    border-radius: 12px; /* curvatura */
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25); /* contorno */
+    margin-top: 10px;
+    font-size: 16px; /* tamanho da fonte */
+    font-weight: 10; /* peso da fonte */
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+main form button:hover{
+    background-color: #777;
+    color: #ffffff;
+}
+
+main form .links-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column; /*itens em colunas */
+    align-items: center;
+    margin-top: 10%; /* margem do topo */
+}
+
+main form .links-container span{
+    font-size: 12px;
+    font-weight: 600;
+
+}
+
+main form .links-container aside{
+    margin-top: 5%;
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+
+main form .links-container aside i{
+    font-size: 0.8cm;
+    background-color: #fff;
+    padding: 8px;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+    color: #fff;
+
+    display: flex; /* alinhar */
+    align-items: center;
+    justify-content: center;
+}
+
+main form .links-container aside .google{
+    color: #e34133;
+}
+
+main form .links-container aside .google:hover{
+    background-color: #e34133;
+    color: #fff;
+}
+
+main form .links-container aside .linkedin{
+    color: #0a66c2;
+}
+
+main form .links-container aside .linkedin:hover{
+    background-color: #0a66c2;
+    color: #fff;
+}
+main form .links-container aside .facebook{
+    color: #14a0f9;
+}
+
+main form .links-container aside .facebook:hover{
+    background-color: #14a0f9;
+    color: #fff;
+}
+
+main form footer{
+    width: 100%;
+    margin-top: 9%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form footer hr{
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+}
+/* main form .footer-span{
+    font-weight: 300;
+    font-size: 0.5px;
+    margin-top: 5%;
+} NÃO SEI O QUE ESTA ERRADO E PORQUE NAO FUNCIONA */
+
+main form footer a{
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
+}
+
+main form footer a:hover{
+    color: #777; 
 }

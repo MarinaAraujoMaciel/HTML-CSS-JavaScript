@@ -7,6 +7,8 @@
     <title>Adivinhe Números</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/index.js" defer></script>
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https: //fonts.googleapis.com/css2? família= Edu+NSW+ACT+Foundation:wght@600 & display=swap" rel="stylesheet">
@@ -17,9 +19,9 @@
 
     </header>
     <main class="container">
-        <form>
-            <label for="kick">Digite um Numero (0-100):</label>
-            <input type="number" id="kick" min="0" max="100" placeholder="0">
+        <form id="form" >
+            <label for="kick">Digite um Numero (0-10):</label>
+            <input type="number" id="kick" min="0" max="10" placeholder="0">
 
             <button type="submit">Jogar!</button>
         </form>
@@ -29,7 +31,7 @@
             <span id="attempt">Tentativas: 0</span>
         </section>
 
-        <button id="btnRestart" >Jogar de novo!</button>
+        <button id="btnRestart" onclick="restart()">Jogar de novo!</button>
     </main>
 
     <footer>
